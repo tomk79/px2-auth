@@ -1,0 +1,4 @@
+* id,* path,* title,* list_flg,* category_top_flg,* description,* keywords
+,/index.html,Home,1,0
+,/sample1/index.html,Sample 001,1,1
+,/sample2/index.html,Sample 002,1,1

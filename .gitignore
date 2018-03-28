@@ -1,6 +1,14 @@
-composer.phar
-/vendor/
-
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+.DS_Store
+Thumbs.db
+.~*.csv#
+~$*
+!.gitkeep
+vendor/
+composer.lock
+tests/px2/standard/px-files/_sys/ram/
+!tests/px2/standard/px-files/_sys/ram/applock/.gitkeep
+!tests/px2/standard/px-files/_sys/ram/caches/.gitkeep
+!tests/px2/standard/px-files/_sys/ram/data/.gitkeep
+!tests/px2/standard/px-files/_sys/ram/publish/.gitkeep
+tests/px2/standard/common/px_resources/
+!tests/px2/standard/common/px_resources/.gitkeep
