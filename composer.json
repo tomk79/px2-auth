@@ -17,7 +17,8 @@
     "repositories": [
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "tomk79/csv2json": "^1.0"
     },
     "require-dev": {
         "broccoli-html-editor/broccoli-module-fess": "0.1.*",
@@ -31,7 +32,9 @@
     },
     "autoload": {
         "files": [
-            "php/main.php"
+            "php/main.php",
+            "php/dba.php",
+            "php/user.php"
         ]
     },
     "extra": {
