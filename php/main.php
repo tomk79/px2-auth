@@ -119,7 +119,7 @@ class main{
 	public function mk_login_form(){
 		$rtn = '';
 		ob_start(); ?>
-<form action="" method="post">
+<form action="<?= htmlspecialchars($this->px->href( $this->px->req()->get_request_file_path() )) ?>" method="post">
 	<p>User ID: <input type="text" name="auth-login-account" /></p>
 	<p>Password: <input type="password" name="auth-login-password" /></p>
 	<p><button type="submit">ログインする</button></p>
