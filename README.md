@@ -33,7 +33,12 @@ return call_user_func( function(){
 	// processor
 	$conf->funcs->processor->html = array(
 		// px2-auth : filter
-		'tomk79\pickles2\auth\main::filter('.json_encode(array(	
+		'tomk79\pickles2\auth\main::filter('.json_encode(array(
+			'auth_level_request' => array(
+				'/' => 0, // 0以上が必要 (=ログインなしで閲覧可能)
+				'/mypage/*' => 1, // 1以上が必要 (=ログインしているすべてのユーザーが閲覧可能)
+				'/admin/*' => 100, // 100以上が必要 (=管理者権限が必要など、数値と権限を任意に設計して決定)
+			),
 		)).')',
 	);
 

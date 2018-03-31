@@ -60,9 +60,16 @@ class user{
 		// ログイン成功
 		$this->auth_info['account'] = $user_info['account'];
 		$this->auth_info['name'] = $user_info['name'];
-		$this->auth_info['auth_level'] = 1;
+		$this->auth_info['auth_level'] = intval($user_info['auth_level']);
 		$this->px->req()->set_session($this->session_key, $this->auth_info);
 		return true;
+	}
+
+	/**
+	 * ユーザーの認証レベルを取得する
+	 */
+	public function get_auth_level(){
+		return intval($this->auth_info['auth_level']);
 	}
 
 	/**

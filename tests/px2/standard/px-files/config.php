@@ -211,7 +211,10 @@ return call_user_func( function(){
 	$conf->funcs->processor->html = array(
 		// px2-auth : filter
 		'tomk79\pickles2\auth\main::filter('.json_encode(array(
-			
+			'auth_level_request' => array(
+				'/mypage/*' => 1,
+				'/admin/*' => 100,
+			),
 		)).')',
 
 		// ページ内目次を自動生成する
